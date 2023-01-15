@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+}
+
+.text-primary {
+    color: #727272;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ---------------
+    Header
+----------------------- */
+.header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+
+}
+
+.nav-title {
+    font-size: 45px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.brand {
+    text-align: center;
+    margin: 125px 160px 100px;
+}
+
+.brand-title {
+    font-size: 64px;
+    color: #131313;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #727272;
+}
+
+.brand-button {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #FF900E;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 25px 0px 40px;
+
+}
+
+.brand-button:hover {
+    background-color: #000000;
+}
+
+.banner-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 50px;
+    margin-top: -95px;
+}
+
+/* --------------------
+    Main Section
+----------------------- */
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Features {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.features-imgs {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.features-info {
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 80px;
+}
+
+.Features-t {
+    font-size: 45px;
+    color: #131313;
+}
+
+.Features-t-2 {
+    font-size: 45px;
+    color: #FF900E;
+}
+
+/*------------------------- Features Info-------------------------- */
+.enjoys {
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+}
+
+.enjoys-info {
+    margin-right: 27px;
+}
+
+.enjoys-img img {
+    margin-left: 27px;
+    height: 655px;
+    width: auto;
+    margin-bottom: -25px;
+}
+
+.bt-tx {
+    font-size: 45px;
+    color: white;
+}
+
+.img-btn {
+    margin-top: -70px;
+}
+
+.info {
+    border-left: 5px solid #FF900E;
+}
+
+.enjoy-tx {
+    font-size: 45px;
+    color: #131313;
+    padding-left: 20px;
+}
+
+.en-tx {
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 1px 2px 10px 8px #f9f9f9;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #131313;
+}
+
+/* ----------------
+    fact style
+------------------ */
+.facts {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 130px;
+}
+
+.carts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cart:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.cart img {
+    width: 45px;
+    height: 45px;
+}
+
+/* ----------------------
+    Sponser
+--------------- */
+.sponsor {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spn-info {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.spn-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spn-img img {
+    width: 166px;
+    height: 55px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* -------------------------
+    Footer
+------------------- */
+footer {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+a {
+    color: #FF900E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(241, 7, 222);
+}
+
+
+/*------------------------------- Responsive Media queery styles----------------- */
+@media screen and (max-width: 576px) {
+    .nav-title {
+        font-size: 28px;
+    }
+
+    nav ul {
+        display: grid;
+        align-items: center;
+    }
+
+    .brand {
+        text-align: center;
+        margin: 56px 23px 100px;
+    }
+
+    .brand-title {
+        font-size: 28px;
+        color: #131313;
+    }
+
+    .Features {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .features-imgs {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features-info {
+        width: auto;
+        margin-top: 50px;
+        margin-bottom: -99px;
+        padding-left: 80px;
+    }
+
+    .enjoys {
+        width: 90%;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 130px;
+    }
+
+    .enjoys-img {
+        width: 90%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .facts {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+
+    .spn-img {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .spn-info {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    footer {
+        background: rgba(255, 144, 14, 0.1);
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .enjoys-img img {
+
+        height: 655px;
+        width: 90%;
+        margin-bottom: -25px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    nav ul {
+        display: grid;
+        align-items: center;
+    }
+    .Features {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .features-imgs {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .features-info {
+        width: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    .carts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .spn-img {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .enjoys {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 130px;
+    }
+    .enjoys {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .enjoys-img {
+        margin-top: 50px;
+    }
+    .facts {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section.Features {
+        display: flex;
+        flex-direction: column;
+    }
+    .features-info {
+        width: auto;
+        margin-top: 50px;
+        margin-bottom: auto;
+        padding-left: 0px;
+    }
+    .enjoys {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .enjoys-img {
+        margin-top: 50px;
+    }
+    .enjoys-img img {
+
+        height: 655px;
+        width: 90%;
+        margin-bottom: -25px;
+    }
+}
